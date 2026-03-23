@@ -1,4 +1,8 @@
 package com.omar.sales.presentation.customer.list
 
-class ListCustomerUiState {
-}
+import com.omar.sales.domain.model.Customer
+
+data class ListCustomerUiState(
+    val isLoading: Boolean = false,
+    val customers: List<Customer> = emptyList()
+)

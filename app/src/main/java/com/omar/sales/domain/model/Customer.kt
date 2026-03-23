@@ -1,4 +1,9 @@
 package com.omar.sales.domain.model
 
-class Customer {
-}
+data class Customer(
+    val code: String,
+    val name: String,
+    val email: String,
+    val phone: String,
+    val address: String
+)
