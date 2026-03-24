@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "26813560695",
+    "project_id": "sales-app-105de",
+    "storage_bucket": "sales-app-105de.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26813560695:android:1a8a17a37b8bcc15149372",
+        "android_client_info": {
+          "package_name": "com.omar.sales"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGD3219EG0zrhdOmlsM7_E6OkjU2T4h0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

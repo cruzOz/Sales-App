@@ -5,8 +5,8 @@ import androidx.compose.runtime.remember
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.omar.sales.data.repository.InMemoryCustomerRepository
-import com.omar.sales.data.repository.InMemoryProductRepository
+import com.omar.sales.data.repository.FirestoreCustomerRepository
+import com.omar.sales.data.repository.FirestoreProductRepository
 import com.omar.sales.domain.usecase.customer.CreateCustomerUseCase
 import com.omar.sales.domain.usecase.customer.DeleteCustomerUseCase
 import com.omar.sales.domain.usecase.customer.ListCustomersUseCase
@@ -26,8 +26,8 @@ import com.omar.sales.presentation.product.list.ListProductViewModel
 fun AppNavigation() {
     val navController = rememberNavController()
 
-    val productRepository = remember { InMemoryProductRepository() }
-    val customerRepository = remember { InMemoryCustomerRepository() }
+    val productRepository = remember { FirestoreProductRepository() }
+    val customerRepository = remember { FirestoreCustomerRepository() }
 
     val createProductUseCase = remember { CreateProductUseCase(productRepository) }
     val listProductsUseCase = remember { ListProductsUseCase(productRepository) }
